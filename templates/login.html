@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <script type="text/javascript">
+        var URL = location.search;//建立一個全域性變數“foobar”
+        function get_url() {
+        document.getElementById('save_url').value = URL;//給HTML元素的value屬性賦值
+    }
+        window.onload = function(){get_url()}
+    </script>
+</head>
+
+<body>
+    <form action="http://168.63.242.251:5500/login" method="post">
+        <div style="margin: 0px auto; text-align: center">
+            <div style="padding: 10px">
+                <span>帳號:</span>
+                <input type="text" name="ACCOUNT">
+            </div>
+            <div style="padding: 10px">
+                <span >密碼:</span>
+                <input type="password" name="PASSWORD" >
+            </div>
+            <div style="padding: 10px">
+                <button type='submit'>Submit</button>
+            </div>
+            <div style="padding: 10px">
+                <input type="hidden" name="save_url" id="save_url">
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
