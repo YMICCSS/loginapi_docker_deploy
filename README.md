@@ -14,4 +14,6 @@ docker create [OPTIONS] IMAGE [COMMAND] [ARG...]
 ```
 docker run -d -p 80:80 --name my_image nginx
 ```
+
+以上省略多個操作細節
 詳細教學可參考 : https://github.com/twtrubiks/docker-tutorial
